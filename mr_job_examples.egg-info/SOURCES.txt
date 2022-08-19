@@ -1,0 +1,7 @@
+main.py
+setup.py
+test_main.py
+mr_job_examples.egg-info/PKG-INFO
+mr_job_examples.egg-info/SOURCES.txt
+mr_job_examples.egg-info/dependency_links.txt
+mr_job_examples.egg-info/top_level.txt
