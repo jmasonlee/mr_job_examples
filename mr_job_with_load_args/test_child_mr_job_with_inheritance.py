@@ -5,8 +5,10 @@ def test_whole_MR_job() -> None:
     stdin = open("lorem_ipsum.txt", "rb")
     mr_job = MRMostUsedWord(['--no-conf'])
     mr_job.sandbox(stdin=stdin)
-    print
-
+    options = mr_job.options
+    job_runner_kwargs = mr_job._runner_kwargs()
+    print(f"{vars(options)}")
+    print(f"runner_kwargs:{job_runner_kwargs}")
     results = []
     with mr_job.make_runner() as runner:
         runner.run()
